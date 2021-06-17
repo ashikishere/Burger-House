@@ -1,0 +1,531 @@
+/*
+
+░█████╗░░█████╗░██████╗░███████╗  ██╗░░░░░██╗██╗░░██╗███████╗  ██████╗░░█████╗░░█████╗░░██████╗
+██╔══██╗██╔══██╗██╔══██╗██╔════╝  ██║░░░░░██║██║░██╔╝██╔════╝  ██╔══██╗██╔══██╗██╔══██╗██╔════╝
+██║░░╚═╝██║░░██║██║░░██║█████╗░░  ██║░░░░░██║█████═╝░█████╗░░  ██████╦╝██║░░██║██║░░██║╚█████╗░
+██║░░██╗██║░░██║██║░░██║██╔══╝░░  ██║░░░░░██║██╔═██╗░██╔══╝░░  ██╔══██╗██║░░██║██║░░██║░╚═══██╗
+╚█████╔╝╚█████╔╝██████╔╝███████╗  ███████╗██║██║░╚██╗███████╗  ██████╦╝╚█████╔╝╚█████╔╝██████╔╝
+░╚════╝░░╚════╝░╚═════╝░╚══════╝  ╚══════╝╚═╝╚═╝░░╚═╝╚══════╝  ╚═════╝░░╚════╝░░╚════╝░╚═════╝░
+
+░██╗░░░░░░░██╗██╗████████╗██╗░░██╗  ░█████╗░███████╗
+░██║░░██╗░░██║██║╚══██╔══╝██║░░██║  ██╔══██╗╚════██║
+░╚██╗████╗██╔╝██║░░░██║░░░███████║  ███████║░░███╔═╝
+░░████╔═████║░██║░░░██║░░░██╔══██║  ██╔══██║██╔══╝░░
+░░╚██╔╝░╚██╔╝░██║░░░██║░░░██║░░██║  ██║░░██║███████╗
+░░░╚═╝░░░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝  ╚═╝░░╚═╝╚══════╝
+
+ */
+
+/***************************************************************************************
+*****************************************************************************************
+*******************  Author Name: Az Ashik  ******************* 
+*******************  Design : burger house Responsive Design******************* 
+*******************  work: psd to html ******************* 
+*******************   Bootstrap version : 5 ******************* 
+*******************  font-awesome version :font awesome 5 pro ******************* 
+*****************************************************************************************
+*****************************************************************************************/
+
+/* FONT  AND COLOR*/
+
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+:root {
+  --main-font: "Alfa Slab One", cursive;
+  --bold-font: "Bebas Neue", cursive;
+  --p-font: "Montserrat", sans-serif;
+
+  /* color use */
+  --primary: #411f0b;
+  --red: #de1d1c;
+  --yellow-white: #ffc03a;
+  --black: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--bold-font);
+}
+p {
+  font-family: var(--p-font);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/*landing page start here **/
+
+.header {
+  width: 100%;
+  background: url(../images/landingpage.png) no-repeat center top;
+  background-size: cover;
+  /* height: 100vh; */
+  padding: 0px 0px 80px;
+}
+.menu {
+  width: 100%;
+  padding: 20px 0px;
+}
+.menu-top {
+  width: 100%;
+  padding: 25px 0px 0px;
+}
+.menu-top img {
+  width: auto;
+}
+.menu-top span {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--p-font);
+  margin-left: 10px;
+  text-transform: capitalize;
+  color: #3d2514;
+}
+
+/* navber */
+
+.bg-light {
+  background-color: transparent !important;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #de1d1c;
+}
+.navbar-light .navbar-nav .nav-link {
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 400;
+  font-family: var(--bold-font);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #3d2514;
+  margin-left: 35px;
+  margin-top: 10px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #de1d1c;
+}
+
+.navbar-brand {
+  margin-top: -115px;
+}
+/* banner */
+.banner {
+  width: 100%;
+  padding: 80px 0px 0px;
+}
+.banner .buerger-banner {
+  width: 100%;
+}
+.inner-banner {
+  width: 100%;
+  padding: 40px 0px 0px;
+}
+
+.inner-banner h6 {
+  display: inline-block;
+  font-size: 23px;
+  color: var(--primary);
+  font-family: var(--bold-font);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px dashed #3d2514;
+  padding: 12px 18px 8px;
+}
+.inner-banner h1 {
+  margin-top: 15px;
+  font-size: 110px;
+  font-family: var(--main-font);
+  text-shadow: 4px 5px #fee7ba;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 0px;
+  line-height: 111px;
+}
+.inner-banner h2 {
+  font-size: 60px;
+  font-family: var(--main-font);
+  text-shadow: 4px 5px #fee7ba;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+/*landing page start end **/
+
+/* -------------------today item start ------------*/
+.today-item {
+  width: 100%;
+  padding: 80px 0px 40px;
+}
+.today-item-big {
+  width: 100%;
+  position: relative;
+}
+.today-item-big img {
+  width: 100%;
+}
+.today-item-big .text-group {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  padding: 30px 25px;
+}
+
+.today-item-big .text-group h4 {
+  font-size: 28px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 21px;
+}
+.today-item-big .text-group h2 {
+  font-size: 35px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 50px;
+  letter-spacing: 2px;
+}
+.today-item-small {
+  width: 100%;
+  position: relative;
+}
+.today-item-small img {
+  width: 100%;
+}
+.today-item-small .text-group {
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0;
+  padding: 30px 25px;
+}
+
+.today-item-small .text-group h4 {
+  font-size: 28px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+.today-item-small .text-group h2 {
+  font-size: 35px;
+  margin-bottom: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+
+.samll-item {
+  margin-top: 0px;
+}
+.nd-item {
+  margin-top: 39px;
+}
+/* -------------------today item end ------------*/
+
+/* services section start */
+.services {
+  width: 100%;
+  padding: 40px 0px 80px;
+}
+.title {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.title h3 {
+  background: #ffc03a;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 30px;
+  color: var(--primary);
+  line-height: 40px;
+}
+.title h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: var(--primary);
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0px 15px;
+  text-transform: uppercase;
+}
+
+.title p {
+  font-size: 16px;
+  font-family: var(--p-font);
+  color: #3d2514;
+  line-height: 26px;
+  font-weight: 400;
+}
+.services .services-item {
+  width: 100%;
+  text-align: center;
+}
+.services .services-item img {
+  width: 100%;
+}
+.services .services-item h3 {
+  font-size: 35px;
+  text-transform: uppercase;
+  line-height: 45px;
+  color: #3d2514;
+  font-weight: 400;
+  margin-top: 15px;
+}
+.services .services-item p {
+  font-size: 15px;
+  font-family: var(--p-font);
+  color: #3d2514;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.services .services-item .btn-primary {
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 0px !important;
+  padding: 15px 40px;
+  color: #fff;
+  background: #de1c1c;
+  border: 1px solid #de1c1c;
+}
+.services .services-item .btn-primary:hover,
+.services .services-item .btn-primary:focus {
+  background: transparent;
+  color: var(--primary);
+}
+/* services section end */
+
+/* upcoming section start */
+
+.upcoming {
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.upcoming .inner-upcoming {
+  width: 98%;
+  padding: 25px 25px 25px 52px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 10px auto;
+}
+
+.upcoming .inner-upcoming h5 {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 0px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.upcoming .inner-upcoming h1 {
+  font-size: 40px;
+  font-family: var(--main-font);
+  color: var(--primary);
+  text-transform: uppercase;
+  line-height: 50px;
+  margin-bottom: 25px;
+}
+.upcoming .inner-upcoming p {
+  font-size: 20px;
+  font-family: var(--p-font);
+  color: #3d2514;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.upcoming .owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #ffc135;
+}
+
+.upcoming .owl-theme .owl-dots .owl-dot span {
+  width: 15px;
+  height: 15px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+}
+.upcoming .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: -60px;
+  margin-left: 62px;
+  position: relative;
+  z-index: 999;
+}
+.upcoming .owl-theme .owl-dots,
+.upcoming .owl-theme .owl-nav {
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
+}
+/* upcoming section end */
+
+/* reservation section start */
+.reservation {
+  width: 100%;
+  padding: 80px 0px;
+  background-image: url(../images/sburger.png), url(../images/splate.png);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.reservation .title h3 {
+  background: none;
+  display: block;
+  padding: 0px;
+  font-size: 35px;
+  color: var(--primary);
+  line-height: 45px;
+}
+.reservation .title h1 {
+  font-family: "Alfa Slab One", cursive;
+  color: var(--primary);
+  font-size: 47px;
+  line-height: 57px;
+  margin: 0px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.reservation form {
+  width: 100%;
+  margin-top: 10px;
+}
+.reservation form .form-control {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--bold-font);
+  color: var(--primary);
+}
+
+.reservation form .form-control {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: var(--bold-font);
+  color: var(--primary);
+  background: transparent;
+}
+.reservation form .form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--primary);
+  outline: 0;
+  box-shadow: none;
+}
+.reservation form .btn-primary {
+  width: 100%;
+  background: #de1d1c;
+  border-color: #de1d1c;
+  padding: 17.5px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.reservation form .btn-primary:hover,
+.reservation form .btn-primary:focus {
+  background: transparent;
+  color: #000;
+}
+/* reservation section end */
+
+.footer {
+  width: 100%;
+  background: url(../images/footer.png) no-repeat center top;
+  background-size: cover;
+}
+.footer .inner-footer {
+  width: 100%;
+
+  padding: 80px 50px 20px;
+}
+.footer .inner-footer p {
+  font-size: 14px;
+  font-family: var(--p-font);
+  color: #ffffff;
+  line-height: 24px;
+  font-weight: 400;
+  margin-top: 40px;
+  width: 80%;
+}
+.footer .footer-contact {
+  width: 100%;
+  padding: 122px 0px 125px 254px;
+}
+.footer .footer-contact img {
+  width: 25px;
+}
+.footer .footer-contact span {
+  font-size: 20px;
+  font-family: var(--bold-font);
+  color: #ffff;
+  margin-left: 20px;
+}
+
+.footer .inner-footer .coopyright {
+  font-size: 16px;
+  font-family: var(--bold-font);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0px;
+}
+
+.footer .inner-footer .footer-icons {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  text-align: right;
+}
+.footer .inner-footer .footer-icons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.footer .inner-footer .footer-icons li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  color: #000;
+  transition: 0.5s;
+}
+.footer .inner-footer .footer-icons li a:hover {
+  background: var(--red);
+  color: #fff;
+}
