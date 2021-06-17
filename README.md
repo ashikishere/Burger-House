@@ -14,6 +14,8 @@
 
 - OWL CAROUSEL
 
+- Font Awesome 5 pro 
+
  ### Hi there, I'm Ashikur Zaman - aka [AZ Ashik][facebook] 👋
 
 ## I'm a student, Front-end Web-Developer, and Game lover!!
