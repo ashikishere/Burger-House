@@ -1,7 +1,5 @@
 # Burger-house
 
-# This is For my assignment
-
 ![ project-6](./images/lucid.png)
 
 ## MAKE WITH
